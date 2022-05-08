@@ -5,7 +5,7 @@ import { setTheNotifications } from '../reducers/notificationReducer'
 import { useParams, useNavigate } from 'react-router-dom'
 //css mui
 import { Card, CardContent, Typography, Button, CardActions, Grid, Box, Container, TextField } from '@mui/material'
-import ThumbUpIcon from '@mui/icons-material/ThumbUp'
+import { ThumbUp } from '@material-ui/icons'
 
 const Blog = () => {
 
@@ -69,7 +69,7 @@ const Blog = () => {
                 <i>Likes: {blog.likes}</i>
                 <Button
                   size="small"
-                  startIcon={ <ThumbUpIcon/> }
+                  startIcon={ <ThumbUp/> }
                   sx={{
                     padding: 0.7,
                     background: '#0BB596',

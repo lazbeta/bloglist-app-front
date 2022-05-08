@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 //css mui
-import { Typography, Grid } from '@mui/material'
+import { Typography, Grid, Card } from '@mui/material'
 
 const User = () => {
   const { id } = useParams()
@@ -16,7 +16,7 @@ const User = () => {
   )
 
   const result2 = Object.values(result).map((item, index) => {
-    return <li key={index} >{item}</li>
+    return <Card sx={{ marginBottom: '14px' }}key={index} ><li>{item}</li></Card>
   })
 
   if (user.blogs.length === 0){
@@ -50,7 +50,7 @@ const User = () => {
         <Grid item xs={3}>
           <h2>{user.name}</h2>
           <Typography variant="h5">Blogs:</Typography>
-          <Typography sx={{ paddingTop: '40px' }}>{result2}</Typography>
+          <Typography variant="body1" sx={{ paddingTop: '40px' }}>{result2}</Typography>
         </Grid>
       </Grid>
     </div>
