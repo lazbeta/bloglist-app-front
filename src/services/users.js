@@ -6,4 +6,12 @@ const getUsers = async () => {
   return response.data
 }
 
-export default { getUsers }
+const createNewUser = async ( username, name, password ) => {
+
+  const newObject = { username, name, password }
+
+  const response = await axios.post(baseUrl, newObject)
+  return response.data
+}
+
+export default { getUsers, createNewUser }

@@ -116,3 +116,20 @@ form {
   line-height: 0.3;
   text-decoration: none;
 }
+
+.link1 {
+  font-family: "arial", san-serif;
+  line-height: 0.3;
+  color: white;
+  font-size:15px;
+  text-decoration: none;
+}
+
+.link1:hover {
+  font-family: "arial", san-serif;
+  line-height: 0.3;
+  color: black;
+  font-size:15px;
+  text-decoration: none;
+}
+

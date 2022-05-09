@@ -19,6 +19,7 @@ import Notification from './components/Notification'
 import BlogForm from './components/BlogForm'
 import Togglable from './components/Togglable'
 import StickyFooter from './components/Footer'
+import SignUpForm from './components/SignUpForm'
 //react router
 import {
   BrowserRouter as Router,
@@ -135,7 +136,13 @@ const App = () => {
   return (
     <Container maxWidth="xl">
       {user === null ? (
-        loginForm()
+        <Router>
+          <Notification />
+          <Routes>
+            <Route exact path="/" element={loginForm()}/>
+            <Route path="/signup" element={<SignUpForm />} />
+          </Routes>
+        </Router>
       ) : (
         <div>
           <div>

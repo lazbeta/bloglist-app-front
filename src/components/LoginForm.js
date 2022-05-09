@@ -1,6 +1,7 @@
 import React from 'react'
 import propTypes from 'prop-types'
 import { Button, TextField, Typography } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 const LoginForm = ({
   handleSubmit,
@@ -11,7 +12,7 @@ const LoginForm = ({
 }) => {
 
   return (
-    <form onSubmit={handleSubmit}>
+    <><form onSubmit={handleSubmit}>
       <Typography variant="div"><h2>BLOGLISTAPP</h2></Typography>
       <div>
         <TextField
@@ -22,8 +23,7 @@ const LoginForm = ({
           sx={{
             minWidth: '30vw',
             padding: 1
-          }}
-        />
+          }} />
       </div>
       <div>
         <TextField
@@ -35,8 +35,7 @@ const LoginForm = ({
           sx={{
             minWidth: '30vw',
             padding: 1,
-          }}
-        />
+          }} />
       </div>
 
       <div className="login-button-div">
@@ -59,6 +58,10 @@ const LoginForm = ({
         </Button>
       </div>
     </form>
+    <div>
+      <Typography sx={{ textAlign:'center', paddingTop:'30px' }} variant="body1">Do not have an account? Sign up <Link className="link" to="/signup">here</Link></Typography>
+    </div>
+    </>
   )
 }
 
