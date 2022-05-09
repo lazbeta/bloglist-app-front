@@ -2,6 +2,10 @@
 
 ## short description
 This app was as an assignment from fullstack open course.
+
+## link to the live site
+https://bloglisting-app.herokuapp.com/
+
 ### Users are able to:
 - log in
 - comment anonymously
