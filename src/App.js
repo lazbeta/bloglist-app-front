@@ -186,7 +186,20 @@ const App = () => {
                       <hr/>
                       <Button type="submit"
                         onClick={logout}
-                        sx={{ color: 'white', background: '#A9A9A9', }}
+                        sx={{
+                          padding: 1,
+                          background: '#FF002E',
+                          opacity: '49%',
+                          boxShadow: 3,
+                          borderRadius: 3,
+                          color: 'white',
+                          fontSize: 12,
+                          letterSpacing: '0.05em',
+                          '&:hover': {
+                            backgroundColor: '#A9A9A9',
+                            color: 'black',
+                          }
+                        }}
                       >Logout</Button>
                     </Menu>
                   </Box>
@@ -221,16 +234,18 @@ const App = () => {
                   <Box m={1} sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
                     <Typography sx={{ color: 'black', paddingRight: '22px' }}><i>{user.name} </i>is logged-in</Typography>
                     <Button
-                      size="medium"
+                      size="large"
                       sx={{
-                        padding: 0.7,
-                        background: '#A9A9A9',
-                        boxShadow: 0.5,
+                        padding: 1,
+                        background: 'gray',
+                        opacity: '49%',
+                        boxShadow: 3,
                         borderRadius: 3,
                         color: 'white',
                         fontSize: 12,
-                        letterSpacing: '0.09em',
+                        letterSpacing: '0.05em',
                         '&:hover': {
+                          backgroundColor: '#A9A9A9',
                           color: 'black',
                         }
                       }}

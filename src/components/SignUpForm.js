@@ -62,7 +62,6 @@ const SignUpForm = () => {
         <Typography sx={{
           color: '#808080',
           fontSize: '12px',
-          paddingRight: '11vw'
         }}>The password needs to be at least 8 charachters long</Typography>
         <TextField
           name='password'
